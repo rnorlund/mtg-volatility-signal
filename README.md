@@ -41,12 +41,12 @@ stable are heavily-reprinted, deeply-played staples that barely move.
 
 | Card | Volatility | Realized vol | 12mo expected move | Price |
 |---|---|---|---|---|
-| Dockside Extortionist | 96 | 189% | +/-150%+ | $15.26 |
-| Mana Crypt | 89 | 60% | +/-80% | $52.00 |
+| Dockside Extortionist | 96 | 189% | +/-130% | $15.26 |
+| Mana Crypt | 89 | 60% | +/-49% | $52.00 |
 | Alela, Cunning Conqueror | 97 | 170% | +/-115% | $8.10 |
 | Sakashima the Impostor | 96 | 153% | +/-103% | $9.45 |
-| The One Ring | 34 | 16% | +/-26% | $91.08 |
-| Cyclonic Rift | 36 | 15% | +/-26% | $32.49 |
+| The One Ring | 34 | 16% | +/-29% | $91.08 |
+| Cyclonic Rift | 36 | 15% | +/-28% | $32.49 |
 | Jace, the Mind Sculptor | 15 | 7% | +/-25% | $19.78 |
 
 Notice Dockside Extortionist and The One Ring: both are expensive, sought-after cards, but one swings
