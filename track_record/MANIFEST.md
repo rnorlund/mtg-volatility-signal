@@ -2,6 +2,7 @@
 
 Dated, immutable snapshots of the volatility predictions. Each block lists the SHA-256 of that day's prediction files so anyone can verify later that history was not rewritten.
 
+
 ## Snapshot date: 2026-06-01
 
 ```
