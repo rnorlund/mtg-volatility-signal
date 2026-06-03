@@ -18,3 +18,10 @@ Dated, immutable snapshots of the volatility predictions. Each block lists the S
 6db98703de24072f8a39b0350b07114bee670217183701f9e1840a5d41b203d4  2026-06-02_predictions.csv
 0beda1f890e1871a00f5ed216b26547a17612cd62ea84c5983ab0ad6cbda1c29  2026-06-02_predictions.json
 ```
+
+## Snapshot date: 2026-06-03
+
+```
+6db98703de24072f8a39b0350b07114bee670217183701f9e1840a5d41b203d4  2026-06-03_predictions.csv
+0beda1f890e1871a00f5ed216b26547a17612cd62ea84c5983ab0ad6cbda1c29  2026-06-03_predictions.json
+```
