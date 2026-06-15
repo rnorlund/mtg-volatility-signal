@@ -1,6 +1,6 @@
 # mtg-volatility-signal: the Current Volatility index
 
-**Snapshot 2026-06-14. By Cameraderie Cards. Informational only, not financial advice.**
+**Snapshot 2026-06-15. By Cameraderie Cards. Informational only, not financial advice.**
 
 Every other model in this toolkit tells you *direction*: will a card rise (buy), has it peaked
 (sell), is it about to be reprinted (brace), can you exit it (liquidity). None of them tells you
@@ -36,7 +36,7 @@ card's quoted printings change from day to day.
 Scored **30,538 cards** at this snapshot. **30,471** of them have enough
 price history for a **measured** volatility; the small remainder are imputed from a prebuilt
 volatility feature and flagged `is_imputed`. The median card has an annualized realized volatility
-of **26.1%**.
+of **26.2%**.
 
 ![Distribution](figures/fig1_distribution.png)
 
@@ -52,9 +52,9 @@ score is built from really does climb monotonically from Stable to Highly volati
 **2. Volatility persists (the real test).** A backward-looking measurement is only a useful forward
 signal if volatility is persistent. So we measure each card's volatility on the **first half** of
 its history and, separately, on the **second half**, and check whether the first predicts the
-second. It does, at rank correlation **0.479**. The second half is never seen
+second. It does, at rank correlation **0.406**. The second half is never seen
 when the first is computed, so this is genuine out-of-time corroboration, not circular. The fitted
-slope is **0.158**, well below 1: volatility is persistent but **mean-reverting**,
+slope is **0.191**, well below 1: volatility is persistent but **mean-reverting**,
 so the forward bands below shrink today's extreme readings toward the average rather than
 extrapolating them.
 
@@ -66,7 +66,7 @@ Because the score is a real volatility, it converts directly into the magnitudes
 toolkit needs. For every card the output carries an **expected price range** at 3, 6, and 12 months
 (lognormal +/- 1 sigma bands, about a 68% interval) built from the mean-reverting forward
 volatility, plus a measured **max drawdown**. Across all cards the median expected 12-month move is
-about **40.5%** (3-month **18.5%**, 6-month **27.2%**).
+about **44.6%** (3-month **20.2%**, 6-month **29.7%**).
 
 ![Forward range](figures/fig6_forward_range.png)
 
@@ -82,10 +82,10 @@ price barely moves week to week.
 
 | Bucket | Score | Cards | Median realized vol |
 |---|---|---|---|
-| Highly volatile | 75-100 | 5,632 | 68.0% |
-| Volatile | 50-75 | 9,549 | 31.9% |
-| Steady | 25-50 | 9,626 | 21.2% |
-| Stable | 0-25 | 5,731 | 9.0% |
+| Highly volatile | 75-100 | 5,652 | 65.9% |
+| Volatile | 50-75 | 9,507 | 32.1% |
+| Steady | 25-50 | 9,671 | 21.2% |
+| Stable | 0-25 | 5,708 | 8.9% |
 
 ## How this plugs into the other signals
 
@@ -100,7 +100,7 @@ smaller on the violent ones.
 
 - This is **version 1: a measured realized-volatility index, not an options-implied or forward
   forecast**. The only forward assumption is volatility persistence, which is real but moderate and
-  mean-reverting (slope 0.158), so the forward bands are estimates, not guarantees.
+  mean-reverting (slope 0.191), so the forward bands are estimates, not guarantees.
 - **Cheap cards carry residual noise.** Weekly sampling removes most price-discretization noise, but
   a sub-$2 card still shows more percentage wiggle than its dollar moves justify. Imagery and
   examples are restricted to cards over $3 for this reason.
