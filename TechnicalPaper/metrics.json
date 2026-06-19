@@ -1,31 +1,31 @@
 {
-  "snapshot_date": "2026-06-18",
+  "snapshot_date": "2026-06-19",
   "n_cards": 30538,
   "n_measured": 30471,
-  "median_realized_vol_pct": 26.4,
-  "persistence_spearman": 0.437,
+  "median_realized_vol_pct": 25.9,
+  "persistence_spearman": 0.447,
   "persistence_beta": NaN,
   "median_expected_move_pct": {
-    "3mo": 14.1,
-    "6mo": 20.5,
-    "12mo": 30.2
+    "3mo": 13.8,
+    "6mo": 20.1,
+    "12mo": 29.6
   },
   "buckets": {
     "Stable": {
-      "n": 5756,
-      "median_vol_pct": 8.7
+      "n": 5742,
+      "median_vol_pct": 8.5
     },
     "Steady": {
-      "n": 9627,
-      "median_vol_pct": 21.2
+      "n": 9663,
+      "median_vol_pct": 20.9
     },
     "Volatile": {
-      "n": 9491,
-      "median_vol_pct": 32.4
+      "n": 9410,
+      "median_vol_pct": 31.9
     },
     "Highly volatile": {
-      "n": 5664,
-      "median_vol_pct": 66.6
+      "n": 5723,
+      "median_vol_pct": 67.3
     }
   },
   "weights": {
