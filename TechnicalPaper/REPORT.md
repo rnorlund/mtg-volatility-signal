@@ -1,6 +1,6 @@
 # mtg-volatility-signal: the Current Volatility index
 
-**Snapshot 2026-06-29. By Cameraderie Cards. Informational only, not financial advice.**
+**Snapshot 2026-08-05. By Cameraderie Cards. Informational only, not financial advice.**
 
 Every other model in this toolkit tells you *direction*: will a card rise (buy), has it peaked
 (sell), is it about to be reprinted (brace), can you exit it (liquidity). None of them tells you
@@ -36,7 +36,7 @@ card's quoted printings change from day to day.
 Scored **30,538 cards** at this snapshot. **30,471** of them have enough
 price history for a **measured** volatility; the small remainder are imputed from a prebuilt
 volatility feature and flagged `is_imputed`. The median card has an annualized realized volatility
-of **26.2%**.
+of **26.1%**.
 
 ![Distribution](figures/fig1_distribution.png)
 
@@ -52,7 +52,7 @@ score is built from really does climb monotonically from Stable to Highly volati
 **2. Volatility persists (the real test).** A backward-looking measurement is only a useful forward
 signal if volatility is persistent. So we measure each card's volatility on the **first half** of
 its history and, separately, on the **second half**, and check whether the first predicts the
-second. It does, at rank correlation **0.0**. The second half is never seen
+second. It does, at rank correlation **nan**. The second half is never seen
 when the first is computed, so this is genuine out-of-time corroboration, not circular. The fitted
 slope is **nan**, well below 1: volatility is persistent but **mean-reverting**,
 so the forward bands below shrink today's extreme readings toward the average rather than
@@ -66,7 +66,7 @@ Because the score is a real volatility, it converts directly into the magnitudes
 toolkit needs. For every card the output carries an **expected price range** at 3, 6, and 12 months
 (lognormal +/- 1 sigma bands, about a 68% interval) built from the mean-reverting forward
 volatility, plus a measured **max drawdown**. Across all cards the median expected 12-month move is
-about **30.0%** (3-month **14.0%**, 6-month **20.3%**).
+about **29.9%** (3-month **14.0%**, 6-month **20.3%**).
 
 ![Forward range](figures/fig6_forward_range.png)
 
@@ -82,10 +82,10 @@ price barely moves week to week.
 
 | Bucket | Score | Cards | Median realized vol |
 |---|---|---|---|
-| Highly volatile | 75-100 | 5,653 | 66.2% |
-| Volatile | 50-75 | 9,511 | 32.1% |
-| Steady | 25-50 | 9,631 | 21.2% |
-| Stable | 0-25 | 5,743 | 8.9% |
+| Highly volatile | 75-100 | 5,787 | 62.6% |
+| Volatile | 50-75 | 9,423 | 32.0% |
+| Steady | 25-50 | 9,428 | 21.1% |
+| Stable | 0-25 | 5,900 | 8.7% |
 
 ## How this plugs into the other signals
 
