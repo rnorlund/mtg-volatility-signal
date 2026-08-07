@@ -1,6 +1,6 @@
 # mtg-volatility-signal: the Current Volatility index
 
-**Snapshot 2026-08-06. By Cameraderie Cards. Informational only, not financial advice.**
+**Snapshot 2026-08-07. By Cameraderie Cards. Informational only, not financial advice.**
 
 Every other model in this toolkit tells you *direction*: will a card rise (buy), has it peaked
 (sell), is it about to be reprinted (brace), can you exit it (liquidity). None of them tells you
@@ -36,7 +36,7 @@ card's quoted printings change from day to day.
 Scored **30,538 cards** at this snapshot. **30,471** of them have enough
 price history for a **measured** volatility; the small remainder are imputed from a prebuilt
 volatility feature and flagged `is_imputed`. The median card has an annualized realized volatility
-of **26.3%**.
+of **25.8%**.
 
 ![Distribution](figures/fig1_distribution.png)
 
@@ -66,7 +66,7 @@ Because the score is a real volatility, it converts directly into the magnitudes
 toolkit needs. For every card the output carries an **expected price range** at 3, 6, and 12 months
 (lognormal +/- 1 sigma bands, about a 68% interval) built from the mean-reverting forward
 volatility, plus a measured **max drawdown**. Across all cards the median expected 12-month move is
-about **30.1%** (3-month **14.1%**, 6-month **20.4%**).
+about **29.5%** (3-month **13.8%**, 6-month **20.0%**).
 
 ![Forward range](figures/fig6_forward_range.png)
 
@@ -82,10 +82,10 @@ price barely moves week to week.
 
 | Bucket | Score | Cards | Median realized vol |
 |---|---|---|---|
-| Highly volatile | 75-100 | 5,761 | 63.0% |
-| Volatile | 50-75 | 9,453 | 32.2% |
-| Steady | 25-50 | 9,432 | 21.1% |
-| Stable | 0-25 | 5,892 | 8.7% |
+| Highly volatile | 75-100 | 5,745 | 63.6% |
+| Volatile | 50-75 | 9,508 | 31.7% |
+| Steady | 25-50 | 9,361 | 20.8% |
+| Stable | 0-25 | 5,924 | 8.4% |
 
 ## How this plugs into the other signals
 
