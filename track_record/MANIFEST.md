@@ -1351,3 +1351,10 @@ ac78fbc556ed4cc2fe1c0b232501758dcc3651ead2c00692a197ca8fa3fe03d4  2026-11-06_pre
 9fa52c4dc0f8fee77c7bcb8bf0d51aec3c6d70be7431257e0c2ab83dc1616cf4  2026-11-07_predictions.csv
 e81fe0a43e83d9dc0e6e7df1f5e6d73549f121a31b710fd67aceb2ac99a26bd6  2026-11-07_predictions.json
 ```
+
+## Snapshot date: 2026-11-08
+
+```
+9fa52c4dc0f8fee77c7bcb8bf0d51aec3c6d70be7431257e0c2ab83dc1616cf4  2026-11-08_predictions.csv
+e81fe0a43e83d9dc0e6e7df1f5e6d73549f121a31b710fd67aceb2ac99a26bd6  2026-11-08_predictions.json
+```
