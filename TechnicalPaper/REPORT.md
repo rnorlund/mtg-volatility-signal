@@ -1,6 +1,6 @@
 # mtg-volatility-signal: the Current Volatility index
 
-**Snapshot 2026-11-17. By Cameraderie Cards. Informational only, not financial advice.**
+**Snapshot 2026-11-18. By Cameraderie Cards. Informational only, not financial advice.**
 
 Every other model in this toolkit tells you *direction*: will a card rise (buy), has it peaked
 (sell), is it about to be reprinted (brace), can you exit it (liquidity). None of them tells you
@@ -82,10 +82,10 @@ price barely moves week to week.
 
 | Bucket | Score | Cards | Median realized vol |
 |---|---|---|---|
-| Highly volatile | 75-100 | 5,786 | 60.1% |
-| Volatile | 50-75 | 9,512 | 31.4% |
-| Steady | 25-50 | 9,325 | 20.9% |
-| Stable | 0-25 | 5,915 | 8.2% |
+| Highly volatile | 75-100 | 5,803 | 59.7% |
+| Volatile | 50-75 | 9,520 | 31.5% |
+| Steady | 25-50 | 9,277 | 20.7% |
+| Stable | 0-25 | 5,938 | 8.0% |
 
 ## How this plugs into the other signals
 
